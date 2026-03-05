@@ -74,6 +74,26 @@ console.log(icon.paths); // [{ d: "M...", fill: "#222" }]
 console.log(icon.viewBox); // "0 0 24 24"
 ```
 
+### Iconify icon licenses
+
+Icons fetched from Iconify are third-party works under their own licenses. Only prefixes from the `SAFE_PREFIXES` allowlist may be embedded — all use permissive licenses (MIT, ISC, or Apache-2.0) except Remix Icon which uses a custom license permitting embedding in larger works.
+
+| Prefix | Library | License |
+|--------|---------|---------|
+| `ph` | [Phosphor Icons](https://github.com/phosphor-icons/core) | MIT |
+| `lucide` | [Lucide](https://github.com/lucide-icons/lucide) | ISC |
+| `tabler` | [Tabler Icons](https://github.com/tabler/tabler-icons) | MIT |
+| `heroicons` | [Heroicons](https://github.com/tailwindlabs/heroicons) | MIT |
+| `bi` | [Bootstrap Icons](https://github.com/twbs/icons) | MIT |
+| `mdi` | [Material Design Icons](https://github.com/google/material-design-icons) | Apache-2.0 |
+| `ri` | [Remix Icon](https://github.com/Remix-Design/RemixIcon) | Remix Icon License v1.0 |
+| `carbon` | [Carbon Icons](https://github.com/carbon-design-system/carbon) | Apache-2.0 |
+| `fluent` | [Fluent UI Icons](https://github.com/microsoft/fluentui-system-icons) | MIT |
+
+When an icon is embedded in a `.genart` file, its provenance is recorded on the symbol (`iconifyId`, `license` fields) and a `ThirdPartyNotice` entry is appended to the file's `thirdParty` array. Exporters and distribution tools must surface these notices.
+
+See [THIRD-PARTY-LICENSES.md](THIRD-PARTY-LICENSES.md) for full copyright notices, license obligations, and instructions for adding new prefixes.
+
 ## API
 
 | Export | Description |
