@@ -38,8 +38,6 @@ const icon = await fetchAndParseIcon("ph:tree");
 
 ## Symbol Categories
 
-![Symbol contact sheet](test-renders/contact-sheet.png)
-
 <table>
 <tr>
 <td><img src="test-renders/group-01-nature.png" width="280" /><br><em>Nature</em></td>
